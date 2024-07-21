@@ -6,7 +6,7 @@ import "gogoproto/gogo.proto";
 import "nameservice/nameservice/params.proto";
 import "nameservice/nameservice/whois.proto";
 
-option go_package = "github.com/Jeongseup/ludiumapp-chain/x/nameservice/types";
+option go_package = "github.com/Jeongseup/ludiumapp/x/nameservice/types";
 
 // GenesisState defines the nameservice module's genesis state.
 message GenesisState {
