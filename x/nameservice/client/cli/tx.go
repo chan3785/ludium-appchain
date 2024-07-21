@@ -6,9 +6,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	// "github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/Jeongseup/ludiumapp/x/nameservice/types"
+	"github.com/cosmos/cosmos-sdk/client"
 )
 
 var (
@@ -30,9 +29,9 @@ func GetTxCmd() *cobra.Command {
 		RunE:                       client.ValidateCmd,
 	}
 
-	// cmd.AddCommand(CmdBuyName())
-	// cmd.AddCommand(CmdSetName())
-	// cmd.AddCommand(CmdDeleteName())
+	cmd.AddCommand(CmdBuyName())
+	cmd.AddCommand(CmdSetName())
+	cmd.AddCommand(CmdDeleteName())
 	// this line is used by starport scaffolding # 1
 
 	return cmd
