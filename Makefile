@@ -36,4 +36,6 @@ init-demo-chain: install
 
 	@echo "--> start the chain"
 	./scripts/start.sh
-	
+
+proto-gen:
+	@./scripts/protogen.sh

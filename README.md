@@ -26,3 +26,4 @@ https://github.com/cosmos/gaia/blob/v7.0.2/cmd/gaiad/cmd/root.go
 2. https://github.com/cosmos/gaia/tree/v7.0.2
 3. https://github.com/Jeongseup/jeongseupchain
 4. https://github.com/cosmosregistry/chain-minimal
+5. https://gitlab.onechain.game/cosmos/cosmos-sdk/-/blob/5d32ed615210d9f88914dc78b842a9c107cc2ae7/scripts/protocgen.sh
