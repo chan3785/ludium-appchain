@@ -3,7 +3,7 @@ syntax = "proto3";
 package nameservice.nameservice;
 
 // NOTE: 아웃풋 위치
-option go_package = "github.com/Jeongseup/ludiumapp-chain/x/nameservice/types";
+option go_package = "github.com/Jeongseup/ludiumapp/x/nameservice/types";
 
 // Msg defines the Msg service.
 service Msg {

@@ -7,7 +7,7 @@ NODE_DAEMON=ludiumappd
 NODE_DENOM=stake
 
 # reset previous init
-rm -r ~/.$NODE_DAEMON || true
+rm -r ~/.ludiumchain || true
 NODE_DAEMON=$(which $NODE_DAEMON)
 
 # start message 
@@ -30,10 +30,10 @@ $NODE_DAEMON init testmoniker --chain-id demo
 echo "=== add genesis account for alice ==="
 $NODE_DAEMON add-genesis-account alice 100000000$NODE_DENOM --keyring-backend test
 # echo "=== add genesis account for bob ==="
-# $NODE_DAEMON add-genesis-account bob 1000$NODE_DENOM --keyring-backend test
+$NODE_DAEMON add-genesis-account bob 100000000$NODE_DENOM --keyring-backend test
 
 # create default validator
 echo "=== gentx for alice validator ==="
-$NODE_DAEMON gentx alice 100000000$NODE_DENOM --chain-id demo
+$NODE_DAEMON gentx alice 10000000$NODE_DENOM --chain-id demo
 echo "=== collect gentxs ==="
 $NODE_DAEMON collect-gentxs
