@@ -3,7 +3,7 @@
 set -ux
 
 # setup vars
-NODE_DAEMON=ludiumappd
+NODE_DAEMON=ludiumappd 
 NODE_DENOM=stake
 
 # reset previous init
