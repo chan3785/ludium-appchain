@@ -110,7 +110,7 @@ import (
 )
 
 const (
-	AccountAddressPrefix = "cosmos"
+	AccountAddressPrefix = "ludium"
 	Name                 = "ludiumapp2"
 )
 

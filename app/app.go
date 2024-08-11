@@ -83,6 +83,11 @@ import (
 // NOTE: const.go 로 이동
 // const appName = "SimApp"
 
+const (
+	AccountAddressPrefix = "ludium"
+	Name                 = "nameservice"
+)
+
 var (
 	// NOTE:이게 node home입니다. 초깃값은 filepath.Join(userHomeDir, ".simd") 로 구성되어있습니다.
 	// DefaultNodeHome default home directories for the application daemon
